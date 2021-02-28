@@ -219,8 +219,50 @@ namespace ClientWindowsForms
             this.dgvIngredientes.CellEnter += new DataGridViewCellEventHandler(dgvIngredientes_CellEnter);
         }
 
+        private void IlustrarIngrediente(string nomeIngrediente)
+        {
+            switch (nomeIngrediente)
+            {
+                case "Bacon":
+
+                    pictureBox1.Image = Properties.Resources.bacon;
+
+                    break;
+
+                case "Hambúrguer de carne":
+
+                    pictureBox1.Image = Properties.Resources.carne_hambuger;
+
+                    break;
+                case "Queijo":
+
+                    pictureBox1.Image = Properties.Resources.queijo;
+
+                    break;
+                case "Ovo":
+
+                    pictureBox1.Image = Properties.Resources.ovo;
+
+                    break;
+                case "Alface":
+
+                    pictureBox1.Image = Properties.Resources.alface;
+
+                    break;
+                default:
+                    pictureBox1.Image = null;
+                    break;
+            }
+        }
+
         private void dgvIngredientes_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
+            var senderGrid = (DataGridView)sender;
+
+            var nomeIngrediente = senderGrid.CurrentRow.Cells[3].Value.ToString();
+
+            IlustrarIngrediente(nomeIngrediente);
+
             if ((this.dgvIngredientes.Columns[e.ColumnIndex] is DataGridViewTextBoxColumn) ||
                 (this.dgvIngredientes.Columns[e.ColumnIndex] is DataGridViewComboBoxColumn))
             {
@@ -431,6 +473,8 @@ namespace ClientWindowsForms
                 btnAddLanche_Click(sender, e);
             }
         }
+
+
     }
     public class IdComparer : IEqualityComparer<PedidoLancheItem>
     {

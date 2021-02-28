@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPedido));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLanches = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,10 +81,12 @@
             this.lblTotalPedido = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblTotalIngredientes = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLanches)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIngredientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQtdLanche)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -122,9 +124,9 @@
             // id
             // 
             this.id.DataPropertyName = "Id";
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Anton", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.id.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Anton", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.id.DefaultCellStyle = dataGridViewCellStyle1;
             this.id.HeaderText = "Id";
             this.id.Name = "id";
             this.id.ReadOnly = true;
@@ -134,8 +136,8 @@
             // nome
             // 
             this.nome.DataPropertyName = "Nome";
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nome.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nome.DefaultCellStyle = dataGridViewCellStyle2;
             this.nome.HeaderText = "Nome";
             this.nome.Name = "nome";
             this.nome.ReadOnly = true;
@@ -180,9 +182,9 @@
             // IntegrienteId
             // 
             this.IntegrienteId.DataPropertyName = "Id";
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Anton", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.IntegrienteId.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Anton", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.IntegrienteId.DefaultCellStyle = dataGridViewCellStyle3;
             this.IntegrienteId.HeaderText = "Id";
             this.IntegrienteId.Name = "IntegrienteId";
             this.IntegrienteId.Visible = false;
@@ -191,9 +193,9 @@
             // IntegrienteNome
             // 
             this.IntegrienteNome.DataPropertyName = "Nome";
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.IntegrienteNome.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.IntegrienteNome.DefaultCellStyle = dataGridViewCellStyle4;
             this.IntegrienteNome.HeaderText = "Nome";
             this.IntegrienteNome.Name = "IntegrienteNome";
             this.IntegrienteNome.ReadOnly = true;
@@ -202,11 +204,11 @@
             // IntegrienteValorUnit
             // 
             this.IntegrienteValorUnit.DataPropertyName = "ValorUnitario";
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.Format = "C2";
-            dataGridViewCellStyle20.NullValue = null;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.IntegrienteValorUnit.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.Format = "C2";
+            dataGridViewCellStyle5.NullValue = null;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.IntegrienteValorUnit.DefaultCellStyle = dataGridViewCellStyle5;
             this.IntegrienteValorUnit.HeaderText = "Valor Unit.";
             this.IntegrienteValorUnit.Name = "IntegrienteValorUnit";
             this.IntegrienteValorUnit.ReadOnly = true;
@@ -215,18 +217,18 @@
             // IntegrienteQtd
             // 
             this.IntegrienteQtd.DataPropertyName = "Quantidade";
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.DarkKhaki;
-            this.IntegrienteQtd.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.DarkKhaki;
+            this.IntegrienteQtd.DefaultCellStyle = dataGridViewCellStyle6;
             this.IntegrienteQtd.HeaderText = "Qtd.";
             this.IntegrienteQtd.Name = "IntegrienteQtd";
             this.IntegrienteQtd.Width = 52;
             // 
             // remover
             // 
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.remover.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remover.DefaultCellStyle = dataGridViewCellStyle7;
             this.remover.HeaderText = "";
             this.remover.Name = "remover";
             this.remover.ReadOnly = true;
@@ -237,9 +239,9 @@
             // 
             // adicionar
             // 
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adicionar.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adicionar.DefaultCellStyle = dataGridViewCellStyle8;
             this.adicionar.HeaderText = "";
             this.adicionar.Name = "adicionar";
             this.adicionar.ReadOnly = true;
@@ -272,7 +274,7 @@
             this.dgvPedidos.Name = "dgvPedidos";
             this.dgvPedidos.RowHeadersVisible = false;
             this.dgvPedidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPedidos.Size = new System.Drawing.Size(771, 281);
+            this.dgvPedidos.Size = new System.Drawing.Size(1015, 281);
             this.dgvPedidos.TabIndex = 5;
             // 
             // RemoverItem
@@ -285,9 +287,9 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Anton", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Anton", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewTextBoxColumn1.HeaderText = "Id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.Visible = false;
@@ -297,9 +299,9 @@
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewTextBoxColumn2.HeaderText = "Nome";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
@@ -309,9 +311,9 @@
             // 
             this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn7.DataPropertyName = "Quantidade";
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.DarkKhaki;
-            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.DarkKhaki;
+            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridViewTextBoxColumn7.HeaderText = "Qtd.";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ToolTipText = "Quantidade";
@@ -321,11 +323,11 @@
             // 
             this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn6.DataPropertyName = "ValorUnitario";
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.Format = "C2";
-            dataGridViewCellStyle27.NullValue = null;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.Format = "C2";
+            dataGridViewCellStyle12.NullValue = null;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridViewTextBoxColumn6.HeaderText = "Valor Unit.";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
@@ -334,10 +336,10 @@
             // Desconto
             // 
             this.Desconto.DataPropertyName = "Desconto";
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Anton", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.Format = "C2";
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.Desconto.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Anton", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.Format = "C2";
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.Desconto.DefaultCellStyle = dataGridViewCellStyle13;
             this.Desconto.HeaderText = "Desconto";
             this.Desconto.Name = "Desconto";
             this.Desconto.ReadOnly = true;
@@ -347,10 +349,10 @@
             // 
             this.Subtotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Subtotal.DataPropertyName = "SubTotal";
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.Format = "C2";
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.Subtotal.DefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.Format = "C2";
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.Subtotal.DefaultCellStyle = dataGridViewCellStyle14;
             this.Subtotal.HeaderText = "SubTotal";
             this.Subtotal.Name = "Subtotal";
             this.Subtotal.ReadOnly = true;
@@ -367,10 +369,10 @@
             // TotalLanche
             // 
             this.TotalLanche.DataPropertyName = "Total";
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Anton", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.Format = "C2";
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.TotalLanche.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Anton", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.Format = "C2";
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.TotalLanche.DefaultCellStyle = dataGridViewCellStyle15;
             this.TotalLanche.HeaderText = "Total";
             this.TotalLanche.Name = "TotalLanche";
             this.TotalLanche.ReadOnly = true;
@@ -391,7 +393,7 @@
             // 
             this.btnAddLanche.Font = new System.Drawing.Font("Anton", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddLanche.ForeColor = System.Drawing.Color.Black;
-            this.btnAddLanche.Location = new System.Drawing.Point(645, 176);
+            this.btnAddLanche.Location = new System.Drawing.Point(889, 176);
             this.btnAddLanche.Name = "btnAddLanche";
             this.btnAddLanche.Size = new System.Drawing.Size(150, 186);
             this.btnAddLanche.TabIndex = 6;
@@ -404,7 +406,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Anton", 30F);
             this.label3.ForeColor = System.Drawing.Color.DarkRed;
-            this.label3.Location = new System.Drawing.Point(633, 9);
+            this.label3.Location = new System.Drawing.Point(877, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 69);
             this.label3.TabIndex = 7;
@@ -414,7 +416,7 @@
             // 
             this.nudQtdLanche.Font = new System.Drawing.Font("Anton", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudQtdLanche.ForeColor = System.Drawing.Color.Black;
-            this.nudQtdLanche.Location = new System.Drawing.Point(645, 81);
+            this.nudQtdLanche.Location = new System.Drawing.Point(889, 81);
             this.nudQtdLanche.Minimum = new decimal(new int[] {
             1,
             0,
@@ -434,7 +436,7 @@
             this.lblTempo.AutoSize = true;
             this.lblTempo.Font = new System.Drawing.Font("Anton", 30F);
             this.lblTempo.ForeColor = System.Drawing.Color.Gray;
-            this.lblTempo.Location = new System.Drawing.Point(675, 365);
+            this.lblTempo.Location = new System.Drawing.Point(930, 365);
             this.lblTempo.Name = "lblTempo";
             this.lblTempo.Size = new System.Drawing.Size(120, 69);
             this.lblTempo.TabIndex = 9;
@@ -471,7 +473,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Anton", 20F);
             this.label4.ForeColor = System.Drawing.Color.DarkRed;
-            this.label4.Location = new System.Drawing.Point(281, 739);
+            this.label4.Location = new System.Drawing.Point(418, 739);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(132, 47);
             this.label4.TabIndex = 12;
@@ -482,7 +484,7 @@
             this.lblDescontoPedido.AutoSize = true;
             this.lblDescontoPedido.Font = new System.Drawing.Font("Anton", 30F);
             this.lblDescontoPedido.ForeColor = System.Drawing.Color.Black;
-            this.lblDescontoPedido.Location = new System.Drawing.Point(401, 721);
+            this.lblDescontoPedido.Location = new System.Drawing.Point(538, 721);
             this.lblDescontoPedido.Name = "lblDescontoPedido";
             this.lblDescontoPedido.Size = new System.Drawing.Size(0, 69);
             this.lblDescontoPedido.TabIndex = 13;
@@ -493,7 +495,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Anton", 20F);
             this.label8.ForeColor = System.Drawing.Color.DarkRed;
-            this.label8.Location = new System.Drawing.Point(580, 739);
+            this.label8.Location = new System.Drawing.Point(881, 733);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 47);
             this.label8.TabIndex = 14;
@@ -505,7 +507,7 @@
             this.lblTotalPedido.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalPedido.Font = new System.Drawing.Font("Anton", 30F);
             this.lblTotalPedido.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalPedido.Location = new System.Drawing.Point(642, 721);
+            this.lblTotalPedido.Location = new System.Drawing.Point(943, 715);
             this.lblTotalPedido.Name = "lblTotalPedido";
             this.lblTotalPedido.Size = new System.Drawing.Size(0, 69);
             this.lblTotalPedido.TabIndex = 15;
@@ -533,12 +535,24 @@
             this.lblTotalIngredientes.Size = new System.Drawing.Size(0, 69);
             this.lblTotalIngredientes.TabIndex = 17;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(654, 81);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(215, 281);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(819, 789);
+            this.ClientSize = new System.Drawing.Size(1062, 789);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblTotalIngredientes);
             this.Controls.Add(this.label8);
@@ -567,6 +581,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvIngredientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQtdLanche)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -610,6 +625,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalLanche;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblTotalIngredientes;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
