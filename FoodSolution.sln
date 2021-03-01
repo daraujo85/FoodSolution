@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientWindowsForms", "ClientWindowsForms\ClientWindowsForms.csproj", "{322BCEA5-A5E7-40C3-A3B2-581B4F90E7CF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{78456237-0970-4C8A-9A16-720B744DD927} = {78456237-0970-4C8A-9A16-720B744DD927}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiRest", "WebApiRest\WebApiRest.csproj", "{78456237-0970-4C8A-9A16-720B744DD927}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{322BCEA5-A5E7-40C3-A3B2-581B4F90E7CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{322BCEA5-A5E7-40C3-A3B2-581B4F90E7CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{322BCEA5-A5E7-40C3-A3B2-581B4F90E7CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78456237-0970-4C8A-9A16-720B744DD927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78456237-0970-4C8A-9A16-720B744DD927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78456237-0970-4C8A-9A16-720B744DD927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78456237-0970-4C8A-9A16-720B744DD927}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

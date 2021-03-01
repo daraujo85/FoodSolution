@@ -48,7 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLanches = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblIngredientes = new System.Windows.Forms.Label();
             this.dgvIngredientes = new System.Windows.Forms.DataGridView();
             this.IntegrienteId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,6 +82,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblTotalIngredientes = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnFinalizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLanches)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIngredientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
@@ -109,7 +110,7 @@
             this.dgvLanches.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLanches.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
-            this.nome});
+            this.Nome});
             this.dgvLanches.Location = new System.Drawing.Point(24, 81);
             this.dgvLanches.MultiSelect = false;
             this.dgvLanches.Name = "dgvLanches";
@@ -133,15 +134,15 @@
             this.id.Visible = false;
             this.id.Width = 22;
             // 
-            // nome
+            // Nome
             // 
-            this.nome.DataPropertyName = "Nome";
+            this.Nome.DataPropertyName = "descricao";
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nome.DefaultCellStyle = dataGridViewCellStyle2;
-            this.nome.HeaderText = "Nome";
-            this.nome.Name = "nome";
-            this.nome.ReadOnly = true;
-            this.nome.Width = 60;
+            this.Nome.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
+            this.Nome.Width = 60;
             // 
             // lblIngredientes
             // 
@@ -192,7 +193,7 @@
             // 
             // IntegrienteNome
             // 
-            this.IntegrienteNome.DataPropertyName = "Nome";
+            this.IntegrienteNome.DataPropertyName = "descricao";
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkRed;
             this.IntegrienteNome.DefaultCellStyle = dataGridViewCellStyle4;
@@ -276,6 +277,7 @@
             this.dgvPedidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPedidos.Size = new System.Drawing.Size(1015, 281);
             this.dgvPedidos.TabIndex = 5;
+            this.dgvPedidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPedidos_CellContentClick);
             // 
             // RemoverItem
             // 
@@ -298,7 +300,7 @@
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "descricao";
             dataGridViewCellStyle10.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DarkRed;
             this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle10;
@@ -397,7 +399,7 @@
             this.btnAddLanche.Name = "btnAddLanche";
             this.btnAddLanche.Size = new System.Drawing.Size(150, 186);
             this.btnAddLanche.TabIndex = 6;
-            this.btnAddLanche.Text = "&Adicionar (F9)";
+            this.btnAddLanche.Text = "&Adicionar (F8)";
             this.btnAddLanche.UseVisualStyleBackColor = true;
             this.btnAddLanche.Click += new System.EventHandler(this.btnAddLanche_Click);
             // 
@@ -473,7 +475,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Anton", 20F);
             this.label4.ForeColor = System.Drawing.Color.DarkRed;
-            this.label4.Location = new System.Drawing.Point(418, 739);
+            this.label4.Location = new System.Drawing.Point(348, 740);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(132, 47);
             this.label4.TabIndex = 12;
@@ -484,7 +486,7 @@
             this.lblDescontoPedido.AutoSize = true;
             this.lblDescontoPedido.Font = new System.Drawing.Font("Anton", 30F);
             this.lblDescontoPedido.ForeColor = System.Drawing.Color.Black;
-            this.lblDescontoPedido.Location = new System.Drawing.Point(538, 721);
+            this.lblDescontoPedido.Location = new System.Drawing.Point(468, 722);
             this.lblDescontoPedido.Name = "lblDescontoPedido";
             this.lblDescontoPedido.Size = new System.Drawing.Size(0, 69);
             this.lblDescontoPedido.TabIndex = 13;
@@ -495,7 +497,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Anton", 20F);
             this.label8.ForeColor = System.Drawing.Color.DarkRed;
-            this.label8.Location = new System.Drawing.Point(881, 733);
+            this.label8.Location = new System.Drawing.Point(673, 739);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 47);
             this.label8.TabIndex = 14;
@@ -507,7 +509,7 @@
             this.lblTotalPedido.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalPedido.Font = new System.Drawing.Font("Anton", 30F);
             this.lblTotalPedido.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalPedido.Location = new System.Drawing.Point(943, 715);
+            this.lblTotalPedido.Location = new System.Drawing.Point(735, 722);
             this.lblTotalPedido.Name = "lblTotalPedido";
             this.lblTotalPedido.Size = new System.Drawing.Size(0, 69);
             this.lblTotalPedido.TabIndex = 15;
@@ -546,12 +548,25 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
+            // btnFinalizar
+            // 
+            this.btnFinalizar.Font = new System.Drawing.Font("Anton", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinalizar.ForeColor = System.Drawing.Color.Black;
+            this.btnFinalizar.Location = new System.Drawing.Point(889, 732);
+            this.btnFinalizar.Name = "btnFinalizar";
+            this.btnFinalizar.Size = new System.Drawing.Size(150, 54);
+            this.btnFinalizar.TabIndex = 19;
+            this.btnFinalizar.Text = "&Finalizar Pedido (F9)";
+            this.btnFinalizar.UseVisualStyleBackColor = true;
+            this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
+            // 
             // frmPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1062, 789);
+            this.Controls.Add(this.btnFinalizar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblTotalIngredientes);
@@ -591,8 +606,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvLanches;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
         private System.Windows.Forms.Label lblIngredientes;
         private System.Windows.Forms.DataGridView dgvIngredientes;
         private System.Windows.Forms.Label label2;
@@ -607,13 +620,10 @@
         private System.Windows.Forms.Label lblDescontoPedido;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblTotalPedido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IntegrienteId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IntegrienteNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IntegrienteValorUnit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IntegrienteQtd;
-        private System.Windows.Forms.DataGridViewButtonColumn remover;
-        private System.Windows.Forms.DataGridViewButtonColumn adicionar;
         private System.Windows.Forms.DataGridView dgvPedidos;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblTotalIngredientes;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewImageColumn RemoverItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -623,9 +633,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Subtotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn LancheId;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalLanche;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lblTotalIngredientes;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IntegrienteId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IntegrienteNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IntegrienteValorUnit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IntegrienteQtd;
+        private System.Windows.Forms.DataGridViewButtonColumn remover;
+        private System.Windows.Forms.DataGridViewButtonColumn adicionar;
+        private System.Windows.Forms.Button btnFinalizar;
     }
 }
 
