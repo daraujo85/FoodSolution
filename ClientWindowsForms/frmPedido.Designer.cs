@@ -58,15 +58,6 @@
             this.remover = new System.Windows.Forms.DataGridViewButtonColumn();
             this.adicionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dgvPedidos = new System.Windows.Forms.DataGridView();
-            this.RemoverItem = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Desconto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LancheId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalLanche = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAddLanche = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -83,6 +74,16 @@
             this.lblTotalIngredientes = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnFinalizar = new System.Windows.Forms.Button();
+            this.RemoverItem = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Desconto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LancheId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalLanche = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PedidoId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLanches)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIngredientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
@@ -269,7 +270,8 @@
             this.Desconto,
             this.Subtotal,
             this.LancheId,
-            this.TotalLanche});
+            this.TotalLanche,
+            this.PedidoId});
             this.dgvPedidos.Location = new System.Drawing.Point(24, 437);
             this.dgvPedidos.MultiSelect = false;
             this.dgvPedidos.Name = "dgvPedidos";
@@ -278,107 +280,6 @@
             this.dgvPedidos.Size = new System.Drawing.Size(1015, 281);
             this.dgvPedidos.TabIndex = 5;
             this.dgvPedidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPedidos_CellContentClick);
-            // 
-            // RemoverItem
-            // 
-            this.RemoverItem.HeaderText = "";
-            this.RemoverItem.Image = ((System.Drawing.Image)(resources.GetObject("RemoverItem.Image")));
-            this.RemoverItem.Name = "RemoverItem";
-            this.RemoverItem.Width = 5;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Anton", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            this.dataGridViewTextBoxColumn1.Width = 22;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "descricao";
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nome";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 60;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Quantidade";
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.DarkKhaki;
-            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle11;
-            this.dataGridViewTextBoxColumn7.HeaderText = "Qtd.";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ToolTipText = "Quantidade";
-            this.dataGridViewTextBoxColumn7.Width = 52;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "ValorUnitario";
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.Format = "C2";
-            dataGridViewCellStyle12.NullValue = null;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle12;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Valor Unit.";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 81;
-            // 
-            // Desconto
-            // 
-            this.Desconto.DataPropertyName = "Desconto";
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Anton", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.Format = "C2";
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.Desconto.DefaultCellStyle = dataGridViewCellStyle13;
-            this.Desconto.HeaderText = "Desconto";
-            this.Desconto.Name = "Desconto";
-            this.Desconto.ReadOnly = true;
-            this.Desconto.Width = 78;
-            // 
-            // Subtotal
-            // 
-            this.Subtotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Subtotal.DataPropertyName = "SubTotal";
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.Format = "C2";
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.Subtotal.DefaultCellStyle = dataGridViewCellStyle14;
-            this.Subtotal.HeaderText = "SubTotal";
-            this.Subtotal.Name = "Subtotal";
-            this.Subtotal.ReadOnly = true;
-            this.Subtotal.Width = 75;
-            // 
-            // LancheId
-            // 
-            this.LancheId.DataPropertyName = "LancheId";
-            this.LancheId.HeaderText = "LancheId";
-            this.LancheId.Name = "LancheId";
-            this.LancheId.Visible = false;
-            this.LancheId.Width = 77;
-            // 
-            // TotalLanche
-            // 
-            this.TotalLanche.DataPropertyName = "Total";
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Anton", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.Format = "C2";
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.DarkRed;
-            this.TotalLanche.DefaultCellStyle = dataGridViewCellStyle15;
-            this.TotalLanche.HeaderText = "Total";
-            this.TotalLanche.Name = "TotalLanche";
-            this.TotalLanche.ReadOnly = true;
-            this.TotalLanche.Width = 56;
             // 
             // label2
             // 
@@ -560,6 +461,115 @@
             this.btnFinalizar.UseVisualStyleBackColor = true;
             this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
             // 
+            // RemoverItem
+            // 
+            this.RemoverItem.HeaderText = "";
+            this.RemoverItem.Image = ((System.Drawing.Image)(resources.GetObject("RemoverItem.Image")));
+            this.RemoverItem.Name = "RemoverItem";
+            this.RemoverItem.Width = 5;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Anton", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.dataGridViewTextBoxColumn1.Width = 22;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "descricao";
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 60;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Quantidade";
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.DarkKhaki;
+            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGridViewTextBoxColumn7.HeaderText = "Qtd.";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ToolTipText = "Quantidade";
+            this.dataGridViewTextBoxColumn7.Width = 52;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "ValorUnitario";
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.Format = "C2";
+            dataGridViewCellStyle12.NullValue = null;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridViewTextBoxColumn6.HeaderText = "Valor Unit.";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 81;
+            // 
+            // Desconto
+            // 
+            this.Desconto.DataPropertyName = "Desconto";
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Anton", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.Format = "C2";
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.Desconto.DefaultCellStyle = dataGridViewCellStyle13;
+            this.Desconto.HeaderText = "Desconto";
+            this.Desconto.Name = "Desconto";
+            this.Desconto.ReadOnly = true;
+            this.Desconto.Width = 78;
+            // 
+            // Subtotal
+            // 
+            this.Subtotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Subtotal.DataPropertyName = "SubTotal";
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Anton", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.Format = "C2";
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.Subtotal.DefaultCellStyle = dataGridViewCellStyle14;
+            this.Subtotal.HeaderText = "SubTotal";
+            this.Subtotal.Name = "Subtotal";
+            this.Subtotal.ReadOnly = true;
+            this.Subtotal.Width = 75;
+            // 
+            // LancheId
+            // 
+            this.LancheId.DataPropertyName = "LancheId";
+            this.LancheId.HeaderText = "LancheId";
+            this.LancheId.Name = "LancheId";
+            this.LancheId.Visible = false;
+            this.LancheId.Width = 77;
+            // 
+            // TotalLanche
+            // 
+            this.TotalLanche.DataPropertyName = "Total";
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Anton", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.Format = "C2";
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.DarkRed;
+            this.TotalLanche.DefaultCellStyle = dataGridViewCellStyle15;
+            this.TotalLanche.HeaderText = "Total";
+            this.TotalLanche.Name = "TotalLanche";
+            this.TotalLanche.ReadOnly = true;
+            this.TotalLanche.Width = 56;
+            // 
+            // PedidoId
+            // 
+            this.PedidoId.DataPropertyName = "PedidoId";
+            this.PedidoId.HeaderText = "PedidoId";
+            this.PedidoId.Name = "PedidoId";
+            this.PedidoId.Visible = false;
+            this.PedidoId.Width = 74;
+            // 
             // frmPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -624,15 +634,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblTotalIngredientes;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridViewImageColumn RemoverItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Desconto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Subtotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LancheId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TotalLanche;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn IntegrienteId;
@@ -642,6 +643,16 @@
         private System.Windows.Forms.DataGridViewButtonColumn remover;
         private System.Windows.Forms.DataGridViewButtonColumn adicionar;
         private System.Windows.Forms.Button btnFinalizar;
+        private System.Windows.Forms.DataGridViewImageColumn RemoverItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Desconto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Subtotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LancheId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TotalLanche;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PedidoId;
     }
 }
 
